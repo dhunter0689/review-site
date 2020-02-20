@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title th:text="${reviewModel.name}">A review</title>
+    <link rel="stylesheet" href="review-style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 th:text="${reviewModel.name}">A Review</h1>
+    </header>
+
+    <main>
+        <p th:text="${reviewModel.description}"></p>
+    </main>
+
+    <footer>
+        <p><a href="/all-reviews">back to reviews</a></p>
+        <small>&copy WCCI 2019</small>
+    </footer>
+</body>
+
+</html>

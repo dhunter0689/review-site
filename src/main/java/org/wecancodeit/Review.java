@@ -3,14 +3,25 @@ package org.wecancodeit;
 public class Review {
 
 	private Long id;
+	private String name;
+	private String description;
 	
 	public long getId() {
 		return id;
 	}
 	
+	public String getName() {
+		return name;
+	}
 	
-	public Review(long id, String string, String string2) {
+	public String getDescription() {
+		return description;
+	}
+	
+	public Review(long id, String name, String description) {
 		this.id = id;
+		this.name = name;
+		this.description = description;
 	}
 
 
