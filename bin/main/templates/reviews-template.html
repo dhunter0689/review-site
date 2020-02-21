@@ -2,25 +2,27 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Reviews of All My Dream Vacation Places</title>
+    <title>My Dream Vacation Places</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Dream Vacation Places</h1>
+        <h1>Places I Dream of Going To!</h1>
     </header>
 
     <main>
         <ul>
-            <li th:each="review: ${reviewsModel}"><a th:href="|{/single-review/${review.id}}|"
+            <li th:each="review: ${reviewsModel}"><a th:href="@{/single-review(id=${review.id})}"
                     th:text="${review.name}"></a>
             </li>
         </ul>
     </main>
 
     <footer>
-        <small>@We Can Code It</small>
+        <small>&copy WCCI 2019</small>
     </footer>
+
 </body>
 
 </html>
